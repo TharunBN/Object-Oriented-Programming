@@ -79,6 +79,61 @@ Overloading:
 Overriding:
   - Two methods with the same method name and parameters
 
+*Overriding*
+[*Exmaple*](https://www.geeksforgeeks.org/method-overriding-in-python/)
+```
+# Python program to demonstrate 
+# method overriding
+  
+  
+# Defining parent class
+class Parent():
+      
+    # Constructor
+    def __init__(self):
+        self.value = "Inside Parent"
+          
+    # Parent's show method
+    def show(self):
+        print(self.value)
+          
+# Defining child class
+class Child(Parent):
+      
+    # Constructor
+    def __init__(self):
+        self.value = "Inside Child"
+          
+    # Child's show method
+    def show(self):
+        print(self.value)
+          
+          
+# Driver's code
+obj1 = Parent()
+obj2 = Child()
+  
+obj1.show()
+obj2.show()
+```
+*Overloading*
+[*Example*](https://www.javatpoint.com/what-is-operator-overloading-in-python)
+```
+class complex_1:  
+    def __init__(self, X, Y):  
+        self.X = X  
+        self.Y = Y  
+   
+    # Now, we will add the two objects  
+    def __add__(self, U):  
+        return self.X + U.X, self.Y + U.Y  
+   
+Object_1 = complex_1(23, 12)  
+Object_2 = complex_1(21, 22)  
+Object_3 = Object_1 + Object_2  
+print (Object_3)  
+```
+
 *Note, You can overload in python 3*
 
 **Polymorphism**
