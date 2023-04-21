@@ -132,7 +132,7 @@ __str__: Allows us to convert our object to a string
     return self.__name
 ```
 
-*Child*
+*Inheritance Class*
 ```class Student(Person):
   def __init__(self, name, num):
     Person.__init__(self, name)
@@ -141,6 +141,13 @@ __str__: Allows us to convert our object to a string
   def getStudentName(self):
     return("%s: %s" % (self.__sNum,self.getName()))
 ```
+-------
+**Iterable Objects**:
+
+- Iterable Objects are **Objects** that we can iterate through like a sequence 
+- String and Lists are iterable
+- to access indivdual values without indexing, we use for loops
+
 
 
 
