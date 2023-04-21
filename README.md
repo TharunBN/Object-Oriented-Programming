@@ -81,6 +81,13 @@ Overriding:
 
 *Note, You can overload in python 3*
 
+**Polymorphism**
+ - Polymorphism is a method that cna be used across different classes and objects that are dependant on parameters
+
+**Base overrides**
+
+
+
 
 
 
