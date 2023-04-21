@@ -142,9 +142,19 @@ print (Object_3)
 **Base overrides**:
  - when two **different** classes have the same attribute and methods
  - A child of a parent have an overrided method where the child would utilize the method differently
---------
-[*Example*](https://docs.google.com/presentation/d/1BSBVPl27YKaFtiNa_6EPyUd5gnM5o60fKHdrmtp2jGk/edit#slide=id.g55ff3e348b_0_34)
 
+[*Example*](https://docs.google.com/presentation/d/1BSBVPl27YKaFtiNa_6EPyUd5gnM5o60fKHdrmtp2jGk/edit#slide=id.g55ff3e348b_0_34)
+```
+class Dog:
+	def __init__(self,name):
+		self.__name = name
+	
+	def __str__(self):
+		return “Woof, I’m %s.” % self.__name
+
+corgi = Dog(“Tobasco”)
+print(corgi) → “Woof, I’m Tobasco.”
+```
 -------
 
 **Why override?**:
