@@ -84,7 +84,63 @@ Overriding:
 **Polymorphism**
  - Polymorphism is a method that cna be used across different classes and objects that are dependant on parameters
 
-**Base overrides**
+**Base overrides**:
+ - when two **different** classes have the same attribute and methods
+ - A child of a parent have an overrided method where the child would utilize the method differently
+--------
+[*Example*](https://docs.google.com/presentation/d/1BSBVPl27YKaFtiNa_6EPyUd5gnM5o60fKHdrmtp2jGk/edit#slide=id.g55ff3e348b_0_34)
+
+-------
+
+**Why override?**:
+**Benifits**:
+ - Can start to complete mathematical operations on custom **Objects**
+ - Can also start to compare eqaulity between custom **Objects** 
+*Note, we can manipulate how the **Object** behaves when met with built in methods and operators*
+
+**__repr__() base functions**:
+ - This function lets us control what cokes back from our repr() string
+
+__repr__: Allows us to present a printable version of our object
+__str__: Allows us to convert our object to a string
+
+# SlideShow 3
+
+**Inheritance**:
+
+- When a object or class inherits features from the parent class
+	- Single Inheritance: A subclass inheriting the features of a parent class
+	- Multiple Inheritance: A subclass inheriting the features from multiple parent classes
+	- Multilevel Inheritance: A subclass inhertting from a another subclass (*eg*, A -> B -> C)
+- Inheritance can have a hierarchy or even be a hybrid
+- A child will recieve all attributes and methods from the parent 
+- A child can now enhance itself with the new attributes and methods it gained
+- A child can override the attributes and methods to their own liking.
+*Note, A child does not need a new __init__ () method unless it needs a new attribute*
+~ Different types of Inheritance ~
+	- Multi-Generational: Granparents -> Parents -> Child
+	- Multi-Parent: Parent A and Parent B > child
+	- Mixture of 1 and 2
+[Example](https://docs.google.com/presentation/d/1Y_By4kpgBXSZrrpH0JwcwBKgZf3GcTAweFDXrnMZx-U/edit#slide=id.g55ff66ea53_0_14)
+
+*Parent*
+```class Person:
+  def __init__(self, name):
+  	self.__name = name 
+  
+  def getName(self):
+    return self.__name
+```
+
+*Child*
+```class Student(Person):
+  def __init__(self, name, num):
+    Person.__init__(self, name)
+    self.__sNum = num
+  
+  def getStudentName(self):
+    return("%s: %s" % (self.__sNum,self.getName()))
+```
 
 
 
