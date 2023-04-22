@@ -76,6 +76,7 @@ print(s1.__studentNumber) # Will also cause an error
 **Overides**:
 Overloading:
   - Two methods in one class that have the same method name, but different parameters
+
 Overriding:
   - Two methods with the same method name and parameters
 
